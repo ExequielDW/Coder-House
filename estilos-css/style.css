@@ -782,160 +782,73 @@ border-radius: 5px;
     padding: 0;
     margin:0;
     box-sizing: border-box;
-    background:linear-gradient(rgb(8, 0, 0), rgb(16, 15, 15))
+    background:linear-gradient(to right, rgb(8, 0, 0), rgb(64, 0, 0))
 }
 /* Estilo del header */
 .header-bi{
     background:linear-gradient(rgb(147, 1, 1),rgb(3, 1, 1));
     width: 100%;
     height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin:0;
-    position: sticky;
+    position: fixed;
     top:0;
-    border-bottom: 2px solid rgb(179, 179, 179);
+    z-index: 1000;
+    border-bottom: 1px solid rgb(199, 199, 199);
 }
-.header-bi h1{
-    margin-left:10px ;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-family: "Bebas Neue";
-    letter-spacing: 4px;
-    color: rgb(255, 255, 255);
+/* estilos links del navbar */
+.nav-bi a{
+    color:#f5f6f7;
 }
-/* Estilo del div del header */
-.div-bi{
-    width: 90%;
-    height: 100%;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
+/* Estilo del boton */
+.btn-bi{
+    border: 2px solid white;
 }
-/* Estilo nav-bar header */
-.nav-bi{
-    display: flex;
-    list-style-type: none;
-    gap:8px;
-    padding: 0px 8px;
-}
-.a-bio{
-    text-decoration: none;
-    color:#ffffff;
-    font-family: arial;
-    padding: 4px;
-}
-.a-bio:hover{
-    text-decoration: underline;
-    border:2px solid black;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #000000;
-}
-/* Estilo del main */
-.main-bi{
-    height: 100vh;
-    width: 100%;
-    margin-top:11vh;
-}
+/* Estilos del main */
 .section-bi{
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-.div-mainbi h2{
-color:#ffffff;
-width: 100%;
-height: 100%;
-text-align: center;
-font-family: "Bebas Neue";
-letter-spacing: 3px;
-text-transform: uppercase;
-}
-.div-container-bio{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-.div-mainbio {
-    color: rgb(255, 248, 248);
-    width: 30%;
-    height: 100%; 
     padding: 10px;
-    margin: 0;
-    background-color: #010114;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 0 0 5px rgb(209, 209, 209);
-    border-radius: 4px;
-    max-height: 100%;
-    min-width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    box-sizing: border-box;
-    transition:all 0.2s ease;
 }
-.div-mainbio:hover{
-    border: 3px solid rgb(255, 4, 4);
-    background-color: #630606;
+.cont-bi{
+margin: 11vh;
 }
-.div-mainbio h3{
-    font-family: "Bebas Neue";
-    letter-spacing: 2px;
-    font-size: 1.5rem;
-}
-.div-mainbio p{
-    overflow-wrap: break-word;
-    font-family: arial;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
-.img-bi{
-    height: auto;
-    max-height: 40%;
-    width: 70%;
-    max-width: 70%;
-}
-.img-w{
-    height: auto;
-    max-height:40% ;
-    width: 70%;
-    max-width: 70%;
-}
-.buton-bi{
-    margin-bottom: 17px;
-    font-weight: bold;
-    border:1px solid rgb(205, 203, 203);
-    border-radius: 5px;
-    background:transparent;
-    padding: 3px;
-}
-.buton-bi:hover{
-    box-shadow: 0 0 5px rgb(255, 255, 255);
-    border: 1px solid rgb(2, 73, 149);
-    background-color:#6adac7;
-}
-.buton-bi a{
-    color:#ffffff;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.a-buton:hover{
-    color:#ffffff;
-    font-weight: bold;
+/* Estilo del subtitulo principal*/
+.div-mainbi h2{
+    color:#f5f6f7;
+    font-family: "Bungee Tint", sans-serif;
 }
 
+/* Estilos de los div que tienen los articulos */
+.articulos-bio{
+    background-color: #e0e0e0;
+    border: 2px solid black;
+    transition:all 0.2s ease-in;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "sans-serif",arial;
+    font-weight: bold;
+}
+.articulos-bio:hover{
+background-color: #47023d;
+color: #ffffff;
+}
+/* estilos boton de leer */
+.buton-bi{
+border:2px solid rgb(0, 0, 42);
+box-shadow: 0 0 10px rgb(0, 0, 116);
+border-radius: 10px;
+}
+.a-button{
+    color:#070707;
+}
+.buton-bi:active{
+    color:rgb(252, 248, 255);
+    background-color: #47023d;
+    box-shadow: 0 0 10px rgb(65, 0, 71);
+    border: 2px solid rgb(250, 32, 210);
+}
+@media screen and (max-width:730px){
+    .contenedor-bio{
+        gap:10px;
+    }
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ESTILOS DE PORTFOLIO */
 .bd-portafolios,.bg-primario{
