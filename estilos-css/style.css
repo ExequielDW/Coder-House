@@ -1,6 +1,5 @@
 
 /* ESTILO DEL INDEX */
-
 /* Fondo del body */
 .body-index {
     margin: 0;
@@ -22,6 +21,8 @@
     top: 0;
     z-index: 1000;
     height: 11vh;
+    display:flex;
+    justify-content:center;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -33,6 +34,7 @@
     height: 100%;
     font-family: arial;
 }
+/* estilo del titulo de la barra de navegacion */
 .nav-title{
     color: rgba(254, 246, 136, 1);
     font-size: 2rem;
@@ -115,13 +117,13 @@ span{
     text-align: center;
 }
 /* Hover del textarea del input text y del boton buscar */
-#buscar:hover{
+.in-index:hover{
 background-color: rgb(243, 169, 155);
 background:linear-gradient(rgb(217, 220, 66), rgb(217, 213, 3));
 border-color: 3px solid rgb(255, 208, 0);
 box-shadow: 0 0 5px rgb(255, 255, 0);
 }
-.submit {
+.btn-index {
     color: rgb(255, 255, 255);
     background:linear-gradient(rgb(11, 3, 248), rgb(28, 28, 28)) ;
     font-weight: 800;
@@ -131,7 +133,7 @@ box-shadow: 0 0 5px rgb(255, 255, 0);
     border-radius: 6px;
     box-shadow:0 0 7px rgb(96, 231, 248);
 }
-.submit:hover{
+.btn-index:hover{
     background:linear-gradient(rgb(229, 227, 238), black) ;
     border: 2px solid rgb(2, 2, 209);
     color: rgb(0, 0, 0);
@@ -283,27 +285,51 @@ color:#777777;
 /* Medias querys */
 @media (max-width:431px){
 .main-index{
-height: 50vh;
-padding-top:100px ;
-align-items: flex-end;
+height: 70vh;
 }
 .subtitulo{
     font-size: 2rem;
 }
+.in-div{
+    gap:100px;
+}
+.in-form{
+    display: flex;
+    justify-content: center;
+}
 .parrafo-main{
     margin-top:10px;
     text-align:left;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
 }
 .form{
-    display: none;
+width: 90%;
+height:70%;
+padding: 0;
+display: flex;
+margin: 0;
+align-items: center;
+justify-content: center;
+gap:5px;
+}
+.form input[type="text"]{
+    height: 10%;
+    width: 70%;
+    font-size: 0.5rem;
+}
+.btn-index{
+    height: 10%;
+    width: 14%;
+    font-size: 0.5rem;
+    margin: 0;
 }
 .div-footer h3{
-    width:40%;
+    width:50%;
 }
 .formulario--footer{
-    width:40%;
-    height: 40%;
+    width:50%;
+    height: 20%;
 }
 .footer-img{
     height: 90%;
@@ -322,8 +348,108 @@ align-items: flex-end;
 .footer--enalces nav{
     height: 50%;
 }
+.list-footer a{
+    font-size: 1rem;
 }
-
+}
+@media screen and (min-width:432px) and (max-width:720px){
+    .parrafo-main{
+        font-size: 1.2rem;
+    }
+    .in-form{
+        display: flex;
+        justify-content: center;
+    }
+    .form{
+    width: 90%;
+    height:30%;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    }
+    .form input[type="text"]{
+        height: 25%;
+        width: 70%;
+        font-size: 1rem;
+    }
+    .btn-index{
+        height: 25%;
+        width: 14%;
+        font-size: 0.5rem;
+        margin: 0;
+    }
+    .div-footer h3{
+        width:50%;
+    }
+    .formulario--footer{
+        width:50%;
+        height: 20%;
+    }
+    .footer-img{
+        height: 90%;
+        border-radius: 3px;
+    }
+    .footer_div{
+        height: 20%;
+    }
+    .footer--enalces{
+        background-color: #d0ce70;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer--enalces nav{
+        height: 50%;
+    }
+    .list-footer a{
+        font-size: 1rem;
+    }
+    .subtitulo{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:720px) and (max-width:860px){
+    .parrafo-main{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width:860px) and (max-width:960px){
+    .parrafo-main{
+        font-size: 1.2rem;
+    }
+    .form{
+        margin: 0;
+    }
+}
+@media screen and (min-width:960px) and (max-width:1003px){
+    .parrafo-main{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .in-div{
+        gap:250px;
+    }
+    .form{
+        margin: 0;
+    }
+}
+@media screen and (min-width:1003px) and (max-width:1240px){
+    .parrafo-main{
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+    .in-div{
+        gap:200px;
+    }
+    .form{
+        margin: 0;
+    }
+}
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ESTILOS DE PAGINA DE SOPORTE */
 /* Estilo para el cuerpo de la página */
