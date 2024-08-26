@@ -1,0 +1,1156 @@
+
+/* ESTILO DEL INDEX */
+
+/* Fondo del body */
+.body-index {
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(1, 24, 55, 1), rgb(4, 0, 29));
+    width: 100%;
+    height: 100vh;
+}
+
+/* Fuentes */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Header */
+.header-index {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 11vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,21,52,255);
+}
+/* Estilos del navbar */
+.bg-navar{
+    background-color: rgba(0,21,52,255);
+    height: 100%;
+    font-family: arial;
+}
+.nav-title{
+    color: rgba(254, 246, 136, 1);
+    font-size: 2rem;
+    font-family: "Bebas Neue";
+    letter-spacing:2px;
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+.bg-navar a{
+    color: rgba(254, 246, 136, 1);
+}
+.bg-navar a:hover{
+    color:#ffffff;
+    text-decoration: underline;
+}
+/* estilo del enalce que contiene el logo */
+.icono{
+    height: 100%;
+    padding:0 5px 0 0;
+    margin: 0;
+}
+/* Main */
+.main-index {
+    background-image: url("../Imagenes/caja-negra.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:12vh;
+    padding: 0;
+}
+/* Div del main */
+.sub2 {
+    margin: 10px;
+}
+.subtitulo {
+    text-align: center;
+    padding: 10px;
+    color: rgba(254, 246, 136, 1);
+    font-size: 45px;
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+/* Estilo del parrafo del main */
+.parrafo-main {
+    text-align: center;
+    color: rgb(255, 254, 254);
+    font-size: 35px;
+    font-family: "Bebas Neue";
+    margin-top: 250px; /*Separacion de subtitulo y parrafo*/
+    background:transparent;
+    backdrop-filter: blur(6px); /*Filtro de desenfoque para el parrafo*/
+    padding-top:10px;
+}
+span{
+    color:rgb(234, 255, 0);
+}
+/* Estilo del formulario */
+.form {
+    padding: 10px;
+    text-align: center;
+    margin-top:20px;
+    box-sizing: border-box;
+}
+.form input[type="text"] {
+    font-size: 18px; /* Ajusta el tamaño de la fuente según sea necesario */
+    padding: 10px; /* Ajusta el relleno interno según sea necesario */
+    width: 40%; /* Ajusta el ancho del input */
+    font-family: "Arial"; /*Fuente del imput*/
+    letter-spacing: 3px; /*Espacio entre letras*/
+    color:white;
+    box-sizing: border-box;
+    background:transparent;
+    border-color: 3px solid rgb(255, 79, 4);
+    border-radius: 5px;
+}
+.form input[type="text"]::placeholder{
+    color:white;
+    text-align: center;
+}
+/* Hover del textarea del input text y del boton buscar */
+#buscar:hover{
+background-color: rgb(243, 169, 155);
+background:linear-gradient(rgb(217, 220, 66), rgb(217, 213, 3));
+border-color: 3px solid rgb(255, 208, 0);
+box-shadow: 0 0 5px rgb(255, 255, 0);
+}
+.submit {
+    color: rgb(255, 255, 255);
+    background:linear-gradient(rgb(11, 3, 248), rgb(28, 28, 28)) ;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding:10px;
+    border: 2px solid rgb(0, 0, 49);
+    border-radius: 6px;
+    box-shadow:0 0 7px rgb(96, 231, 248);
+}
+.submit:hover{
+    background:linear-gradient(rgb(229, 227, 238), black) ;
+    border: 2px solid rgb(2, 2, 209);
+    color: rgb(0, 0, 0);
+}
+/* Footer */
+.footer-in{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgb(4, 0, 29),rgba(1, 24, 55, 1) );
+    padding: 0;
+    padding-top: 30px;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Estilo del div footer */
+.div-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+}
+/* Estilo del titulo del formulario */
+.div-footer h3{
+    color: rgba(254, 246, 136, 1);
+    font-family: arial;
+    font-size:1,5rem;
+    text-align: center;
+    display: inline-block;
+    align-self: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding:5px 0;
+    box-shadow: 0 0 5px grey;
+    width: 30%;
+}
+/* Estilo del formulario */
+.formulario--footer{
+    width: 30%;
+    height: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+.formulario--footer label{
+    color:#ffffff;
+    text-align: center;
+    font-family: arial;
+    font-size: 1rem;
+    width:100%;
+    box-sizing: border-box;
+}
+/* Estilo de los inputs */
+.input__footer{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    padding: 5px 4px;
+    background-color: rgb(226, 226, 226);
+    border: 2px solid rgb(93, 93, 93);
+    border-radius:5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.input__footer::placeholder{
+color:#777777;
+}
+.buton-submit{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow:0 0 10px rgb(169, 1, 181);
+    border: 1px solid rgb(3, 3, 170);
+    border-radius: 20px;
+    margin-top: 8px;
+    background:linear-gradient(rgb(3, 3, 74), transparent);
+    color: #ffffff;
+    max-width: 100%;
+}
+.buton-submit:hover{
+    background:linear-gradient(#d0ce70, rgb(158, 160, 3));
+    color:#000000;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+    border: 2px solid rgb(238, 255, 6);
+    border-radius: 20px;
+}
+/* estilo div que contiene imagen despues del formulario */
+.footer_div{
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgb(10, 3, 65);
+    border: 2px solid black;
+    background-color:rgb(1, 1, 31);
+}
+.footer-img{
+    max-width: 100%;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(89, 0, 97);
+    max-height: 100%;
+    height: auto;
+}
+/* Estilo div enlaces footer */
+.footer--enlaces{
+    background:linear-gradient(to right ,rgb(0, 0, 0), rgb(0, 0, 0));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    align-items: flex-end;
+}
+
+/* Estilo y config del box de las listas */
+.list-footer {
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    margin: 0; /* Elimina el margen por defecto de la lista */
+}
+/* Estilo de los enlaces del footer */
+.end-footer {
+    font-family:"Bebas Neue";
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 20px; /*margen entre los enlaces*/
+    color: rgba(254, 246, 136, 1);
+}
+.end-footer:hover {
+    color: rgb(240, 240, 240);
+    text-decoration: underline;
+}
+
+/* Medias querys */
+@media (max-width:431px){
+.main-index{
+height: 50vh;
+padding-top:100px ;
+align-items: flex-end;
+}
+.subtitulo{
+    font-size: 2rem;
+}
+.parrafo-main{
+    margin-top:10px;
+    text-align:left;
+    font-size: 1.5rem;
+}
+.form{
+    display: none;
+}
+.div-footer h3{
+    width:40%;
+}
+.formulario--footer{
+    width:40%;
+    height: 40%;
+}
+.footer-img{
+    height: 90%;
+    border-radius: 3px;
+}
+.footer_div{
+    height: 20%;
+}
+.footer--enalces{
+    background-color: #d0ce70;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer--enalces nav{
+    height: 50%;
+}
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ESTILOS DE PAGINA DE SOPORTE */
+/* Estilo para el cuerpo de la página */
+.body-lista {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Imagenes/soporte.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Estilo para el encabezado */
+.header-so {
+    width: 100%;
+    height: 15vh;
+    background-color: #010114;
+    display: flex;
+    align-items: center;
+    gap:50px;
+    position: fixed;
+    top: 0; /* Asegura que el encabezado esté en la parte superior */
+    left: 0; /* Asegura que el encabezado esté alineado a la izquierda */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del título en el encabezado */
+.titulo-lispag {
+    display: inline-block;
+    align-self: center;
+    color: rgb(253, 248, 248);
+    height: auto;
+    width: 30%;
+    font-family: "Bebas Neue";
+    letter-spacing: 3px;
+    margin: 0 10px;
+}
+/* Estilo del navbar */
+.nav-soporte{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+/* Estilo de los enlaces dentro de los elementos de la lista */
+.ul-stylelist a {
+    text-decoration: none;
+    color: rgb(253, 248, 248); /* Color de texto deseado */
+}
+/* Estilo de LISTA DESORDENADA */
+.ul-stylelist{
+    list-style-type: none;
+    width: 60%;
+    height: 10%;
+    padding:0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:0;
+    box-sizing: border-box;
+}
+/* Estilo de los elementos de la lista */
+.listas-li{
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    padding: 0 3px;
+    color:#ffffff;
+    font-size: 15px;
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.listas-li:hover{
+    text-decoration: underline;
+    color:rgb(228, 11, 252);
+}
+/* Estilo del main */
+.main-sopor{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000a4;
+    margin-top:95px;
+    padding: 0;
+}
+
+/* Estilo del subtitulo h2 */
+.sub-listas{
+    color:rgb(0, 254, 250);
+    text-decoration: underline;
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+    margin:0;
+    text-align: center;
+}
+/* Estilo del div que contiene la lista ordenada */
+.div-ol{
+    width: 10%;
+    min-width: 10%;
+    height: 24%;
+    margin-top: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 2px solid black;
+    background-color: #b4b2b2;
+    position: fixed;
+    left: 0;
+}
+.div-ol:hover{
+    border:2px solid blue ;
+    border-radius: 4px;
+}
+.main_nav-lateral{
+    width:100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main-ul li{
+    border-bottom:2px solid rgb(4, 107, 111);
+    padding: 10px;
+    text-align: center;
+    color:#070707;
+    font-family: arial;
+    font-weight: bold;
+}
+.main-ul li:hover{
+    background-color: rgb(3, 14, 94);
+    border-bottom: 4px solid rgb(250, 0, 0);
+    color:#ffffff;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ESTILO DE PAGINA "ARTICULOS" */
+/* Estilos del body */
+.body-art {
+    background: linear-gradient(to right, rgb(11, 12, 31), rgb(4, 3, 22));
+    background-size: cover;
+    width: 100%;
+    height: 100vh; /* Utiliza 100vh para el viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del header */
+.header-art {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    height: 10vh; /* Altura del header */
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    background:linear-gradient(to right, rgb(55, 0, 105),rgb(130, 0, 72));
+    box-shadow: 0 0 5px rgb(147, 0, 220);
+    top: 0;
+    left: 0; /* Asegura que el header esté alineado a la izquierda */
+}
+.navbar{
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-primaria{
+    background-color:transparent;
+}
+.bg-second{
+    color:#ffffff;
+}
+.buton-nav{
+    border: 1px solid rgb(34, 2, 49);
+    box-shadow: 0 0 10px rgb(20, 164, 242);
+}
+.buton-nav:hover{
+    background-color: #e0e0e0;
+    border: 1px solid rgb(0, 4, 239);
+    box-shadow: 0 0 10px rgb(8, 0, 255);
+}
+.buton-lat{
+    backdrop-filter:blur(5px);
+    background-color: transparent;
+    color: #ffffff;
+}
+.div-lat a{
+    color:#9700b5;
+}
+.div-lat a:visited{
+    color:#760064;
+}
+.div-lat a:hover{
+    color:rgb(251, 120, 181);
+}
+.menu-lat a{
+    color:rgb(0, 0, 0);
+}
+.menu-lat a:hover{
+    color:#f977db;
+}
+/* Estilo del contenedor principal */
+.main-art {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh; /* Utiliza 100vh para el viewport height */
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid black;
+    box-sizing: border-box;
+    padding-top: 11vh; /* Ajusta el padding-top para compensar la altura del header */
+}
+
+/* Medios de comunicación para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .sub-art {
+        font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        left: 0;
+        transform: none; /* Elimina el centrado horizontal cuando hay poco espacio */
+    }
+
+    .ul {
+        flex-direction: column; /* Coloca los enlaces en columna en lugar de fila */
+        gap: 10px;
+    }
+
+    .link {
+        height: auto; /* Ajusta la altura de los enlaces para que se adapten a pantallas más pequeñas */
+    }
+
+    .link-in a {
+        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .header-art {
+        height: 11vh; /* Ajusta la altura del header en pantallas más pequeñas */
+    }
+
+    .main-art {
+        padding-top: 15vh; /* Ajusta el padding-top en función del nuevo tamaño del header */
+        height: 180vh;
+    }
+    .footer-art{
+        margin: 0;
+    }
+}
+
+/* Estilo del contenedor principal */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del contenedor de contenido */
+.flex-contenido {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de los artículos */
+.art-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(20% - 20px); /* Ajuste para el espacio del gap */
+    min-width: 200px; /* Tamaño mínimo para mantener la legibilidad */
+    height: auto; /* Ajuste automático de la altura */
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño total */
+    transition: border 0.3s ease;
+    padding: 10px; /* Añadido relleno para evitar el desbordamiento del contenido */
+    overflow: hidden; /* Previene el desbordamiento del contenido */
+}
+
+.art-b:hover {
+    border: 1px solid rgb(0, 80, 94);
+    box-shadow: 0 0 20px rgb(0, 255, 242);
+}
+
+/* Estilo de las imágenes en los artículos */
+.img-art {
+    width: 90%;
+    height: auto; /* Ajusta la altura proporcionalmente */
+    max-width: 100%; /* Evita que la imagen se expanda más allá del contenedor */
+}
+
+/* Estilo de los enlaces en los artículos */
+.href-main {
+    display: inline-block;
+    padding: 3px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    border: 2px solid black;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.href-main:hover {
+    background: linear-gradient(rgb(64, 1, 1), rgb(139, 3, 3));
+    color: #ffffff;
+    border: 1px solid rgb(215, 0, 0);
+    box-shadow: 0 0 9px red;
+}
+
+/* Estilo de los encabezados h3 en los divs */
+.sub-main {
+    font-family: Arial, sans-serif;
+    font-size: 1.125rem; /* Tamaño relativo para mejor adaptabilidad */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de los párrafos dentro de los artículos */
+.art-b p {
+    font-family: Arial, sans-serif;
+    border-top: 2px solid black;
+    text-align: left;
+    margin: 0; /* Asegura que el párrafo no tenga margen extra que cause desbordamiento */
+    overflow-wrap: break-word; /* Asegura que el texto se ajuste dentro del contenedor */
+    width: 100%; /* Hace que el párrafo ocupe el ancho completo del contenedor */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño total */
+}
+
+
+/* Estilos del footer */
+.footer-art{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer-divart{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-art h3{
+    font-size: 1rem;
+    font-family: arial;
+    color:white;
+    padding-top: 20px 5px;
+}
+.footer-art img{
+max-width: 50%;
+width: 200px;
+height: 200px;
+border: 2px solid black;
+border-radius: 5px;
+
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ESTILO DE PAGINA SOBRE NOSOTROS */
+/* Estilo del fondo del body */
+.tablas {
+    background-image: url("../Imagenes/sobre-nosotros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+/* Estilo de titulo */
+.title_table{
+    text-align: center;
+    color: rgb(255, 251, 251);
+    font-size: 30px;
+    border-bottom:3px solid rgb(78, 78, 78);
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue";
+    background:rgba(0, 0, 0, 0.426);
+}
+/* Estilo del div */
+.main-tb{
+    text-align:center; /*alineacion del parrafo*/
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color:rgb(243, 239, 239);
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.343);
+    padding:0;
+}
+.div-sb{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: #00000074;
+    margin:0;
+}
+.span-tb a{
+    font-weight: bold;
+    color: rgb(246, 2, 2);
+    text-decoration: none;
+}
+.span-tb a:hover{
+    border: 1px solid rgb(152, 0, 0);
+    box-shadow:0 0 8px rgb(255, 26, 26);
+    border-radius: 4px;
+    background-color: #be0202;
+    color:#ffffff;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* BIOGRAFIAS */
+/* Estilo del body */
+.html-bi{
+    margin:0;
+    padding: 0;
+}
+.body-bi{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    background:linear-gradient(rgb(8, 0, 0), rgb(16, 15, 15))
+}
+/* Estilo del header */
+.header-bi{
+    background:linear-gradient(rgb(147, 1, 1),rgb(3, 1, 1));
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin:0;
+    position: sticky;
+    top:0;
+    border-bottom: 2px solid rgb(179, 179, 179);
+}
+.header-bi h1{
+    margin-left:10px ;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: "Bebas Neue";
+    letter-spacing: 4px;
+    color: rgb(255, 255, 255);
+}
+/* Estilo del div del header */
+.div-bi{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+/* Estilo nav-bar header */
+.nav-bi{
+    display: flex;
+    list-style-type: none;
+    gap:8px;
+    padding: 0px 8px;
+}
+.a-bio{
+    text-decoration: none;
+    color:#ffffff;
+    font-family: arial;
+    padding: 4px;
+}
+.a-bio:hover{
+    text-decoration: underline;
+    border:2px solid black;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #000000;
+}
+/* Estilo del main */
+.main-bi{
+    height: 100vh;
+    width: 100%;
+    margin-top:11vh;
+}
+.section-bi{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.div-mainbi h2{
+color:#ffffff;
+width: 100%;
+height: 100%;
+text-align: center;
+font-family: "Bebas Neue";
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+.div-container-bio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.div-mainbio {
+    color: rgb(255, 248, 248);
+    width: 30%;
+    height: 100%; 
+    padding: 10px;
+    margin: 0;
+    background-color: #010114;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 5px rgb(209, 209, 209);
+    border-radius: 4px;
+    max-height: 100%;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition:all 0.2s ease;
+}
+.div-mainbio:hover{
+    border: 3px solid rgb(255, 4, 4);
+    background-color: #630606;
+}
+.div-mainbio h3{
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+.div-mainbio p{
+    overflow-wrap: break-word;
+    font-family: arial;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.img-bi{
+    height: auto;
+    max-height: 40%;
+    width: 70%;
+    max-width: 70%;
+}
+.img-w{
+    height: auto;
+    max-height:40% ;
+    width: 70%;
+    max-width: 70%;
+}
+.buton-bi{
+    margin-bottom: 17px;
+    font-weight: bold;
+    border:1px solid rgb(205, 203, 203);
+    border-radius: 5px;
+    background:transparent;
+    padding: 3px;
+}
+.buton-bi:hover{
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    border: 1px solid rgb(2, 73, 149);
+    background-color:#6adac7;
+}
+.buton-bi a{
+    color:#ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.a-buton:hover{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ESTILOS DE PORTFOLIO */
+.bd-portafolios,.bg-primario{
+    background-color: #fff;
+}
+/* Estilos de barra de navegacion */
+.bg-primario{
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link:hover{
+    color:#4c0450;
+    font-weight: bold;
+}
+/* Estilos generales de las secciones */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilo del titulo portfolio */
+.hero-titulo{
+    font-size: 2.5rem;
+    font-family: "Rubik Dirt"
+}
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+/* estilo del div contenido en section hero */
+.hero-principal{
+    padding: 3rem;
+
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+/* estilo imagen del div */
+.hero-imagen{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+/* estilo del segundo div de section hero */
+.hero-inferior-imagen{
+    width: 100px;
+    height: 100px;
+}
+/* estilo de seccion sobre mi */
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+.seccion-oscura{
+    background-color: #02021f;
+    color:white;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt',cursive;
+}
+.seccion-texto{
+    font-size: 1.2rem;
+}
+/* experiencia */
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin:10px 0;
+}
+.seccion-clara{
+    color:black;
+    background-color: #fff;
+}
+.experiencia i{
+    font-size: 2.5rem;
+    color:#7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.badges-contendeor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badge{
+    margin: 5px;
+}
+.experiencia .columna{
+    display: flex;
+    padding: 20px;
+    border: 2px solid #8080804d;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition:all 0.2s ease-in;
+}
+.experiencia .columna:hover{
+    color:white;
+    background-color: #1b1b32;
+}
+/* proyectos */
+.proyectos-recientes{
+    padding: 40px;
+}
+/* estilo imagenes proyecto */
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display:block;
+    transition:all 0.2s ease;
+}
+/* estilo contenedor de proyectos */
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.texto-negro{
+    color:black;
+}
+.texto-blanco{
+    color:white;
+}
+.btn-info{
+    font-size: 1.1rem;
+    margin: 20px;
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color:#584e4e;
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity:0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+/* estilos de iconos  */
+.overlay .iconos-contendor{
+    display: flex;
+}
+.overlay i{
+    color:black;
+    font-size: 60px;
+    margin: 10px;
+}
+.proyecto{
+    position: relative;
+}
+/* estilo del overlay cuando pasamos mouse por encima */
+.proyecto:hover .overlay{
+    opacity:1;
+}
+/* estilo de la imagen al pasar el mouse cambia su opacidad */
+.proyecto:hover img{
+    opacity:0.2
+}
+/* estilos articulos */
+.articulos{
+    min-height: 500px;
+    padding: 30px;
+
+}
+.articulos .card{
+    width: 80%;
+    max-width: 800px;
+    margin: 20px;
+}
+.card-header{
+    font-weight: bold;
+}
+
+/* Media querys para hacerlo responsivo y cambiar estilos segun pantalla */
+@media screen and (max-width:400px){
+.overlay p{
+    font-size: 18px;
+}
+.overlay i{
+    font-size: 40px;
+}
+}
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+@media screen and (min-width:700px){
+    .hero-inferior-imagen{
+        max-width: 100px;
+    }
+}
