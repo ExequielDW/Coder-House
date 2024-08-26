@@ -43,12 +43,22 @@
     margin: 0;
     padding: 0 10px 0 0;
 }
+/* estilos de los link de la barra */
 .bg-navar a{
     color: rgba(254, 246, 136, 1);
 }
 .bg-navar a:hover{
     color:#ffffff;
     text-decoration: underline;
+}
+/* estilo del boton del menu comprimido */
+.btn-in{
+    border: 2px solid rgb(255, 211, 17);
+    box-shadow: 0  0 10px rgb(255, 255, 0);
+    background-color: rgb(35, 35, 155);
+}
+.btn-in:hover{
+    border: 2px solid rgb(255, 254, 250);
 }
 /* estilo del enalce que contiene el logo */
 .icono{
