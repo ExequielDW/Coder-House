@@ -48,8 +48,11 @@
     color: rgba(254, 246, 136, 1);
 }
 .bg-navar a:hover{
-    color:#ffffff;
+    color:#fffbfb;
     text-decoration: underline;
+}
+.bg-navar a:visited{
+    color: rgba(254, 246, 136, 1);
 }
 /* estilo del boton del menu comprimido */
 .btn-in{
@@ -359,7 +362,7 @@ gap:5px;
     height: 50%;
 }
 .list-footer a{
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 }
 @media screen and (min-width:432px) and (max-width:720px){
