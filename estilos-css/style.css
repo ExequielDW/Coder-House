@@ -296,25 +296,237 @@ color:#777777;
 }
 
 /* Medias querys */
-@media (max-width:431px){
-.main-index{
-height: 70vh;
-}
-.subtitulo{
+@media screen and (min-width:320px) and (max-width:360px){
+    .header-index {
+        display:flex;
+        justify-content:start;
+    }
+    .header-index nav{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    .header-index nav div{
+    position: fixed;
+    top:0;
+    padding-top: 10px;
+    }
+    .nav-title{
     font-size: 2rem;
-}
-.in-div{
-    gap:100px;
-}
-.in-form{
+    text-align: center;
+    padding-top: 10px;
+    }
+    .main-index{
+        height: 90%;
+        width:100%;
+        margin-top: 11vh;
+    }
+    .in-div{
+        gap:80px;
+    }
+    .subtitulo{
+        font-size: 2rem;
+    }
+    .in-form{
+        display: flex;
+        justify-content: center;
+    }
+    .parrafo-main{
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing:1px;
+    padding-bottom: 40px;
+    width: 100%;
+    margin: 0;
+    }
+    .form{
+    width: 100%;
+    height:70%;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    }
+    .form input[type="text"]{
+    height: 10%;
+    width: 70%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    }
+    .btn-index{
+    height: 10%;
+    width: 30%;
+    font-size: 0.8rem;
+    margin: 0;
+    }
+    .div-footer h3{
+    width:70%;
+    }
+    .formulario--footer{
+    width:70%;
+    height: 20%;
+    }
+    .footer-img{
+    height: 90%;
+    border-radius: 3px;
+    }
+    .footer_div{
+    height: 20%;
+    }
+    .footer--enalces{
+    background-color: #d0ce70;
+    height: 10%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    }
+    .footer--enalces nav{
+    height: 50%;
+    }
+    .list-footer a{
+    font-size: 0.7rem;
+    }
 }
-.parrafo-main{
+@media screen and (min-width:360px) and (max-width:480px){
+    .header-index {
+        display:flex;
+        justify-content:start;
+    }
+    .header-index nav{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    .header-index nav div{
+    position: fixed;
+    top:0;
+    padding-top: 10px;
+    }
+    .nav-title{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+    }
+    .main-index{
+        height: 90%;
+        width:100%;
+        margin-top: 11vh;
+    }
+    .in-div{
+        gap:100px;
+    }
+    .subtitulo{
+        font-size: 2rem;
+    }
+    .in-form{
+        display: flex;
+        justify-content: center;
+    }
+    .parrafo-main{
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing:1px;
+    padding-bottom: 90px;
+    width: 100%;
+    margin: 0;
+    }
+    .form{
+    width: 100%;
+    height:70%;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    }
+    .form input[type="text"]{
+    height: 10%;
+    width: 70%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    }
+    .btn-index{
+    height: 10%;
+    width: 20%;
+    font-size: 0.8rem;
+    margin: 0;
+    }
+    .div-footer h3{
+    width:70%;
+    }
+    .formulario--footer{
+    width:70%;
+    height: 20%;
+    }
+    .footer-img{
+    height: 90%;
+    border-radius: 3px;
+    }
+    .footer_div{
+    height: 20%;
+    }
+    .footer--enalces{
+    background-color: #d0ce70;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .footer--enalces nav{
+    height: 50%;
+    }
+    .list-footer{
+        display: flex;
+        align-items: center;
+    }
+    .list-footer a{
+    font-size: 0.9rem;
+    }
+}
+@media screen and (min-width:481px) and (max-width:576px){
+    .header-index {
+        display:flex;
+        justify-content:start;
+    }
+    .header-index nav{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+.header-index nav div{
+    position: fixed;
+    top:0;
+    padding-top: 10px;
+}
+.nav-title{
+font-size: 2rem;
+text-align: center;
+padding-top: 10px;
+    }
+    .main-index{
+        height: 70vh;
+    }
+    .subtitulo{
+        font-size: 2rem;
+    }
+    .in-div{
+        gap:100px;
+    }
+    .in-form{
+        display: flex;
+        justify-content: center;
+    }
+    .parrafo-main{
     margin-top:10px;
     text-align:left;
-    font-size: 1rem;
+    font-size: 1.4rem;
     text-align: center;
+    letter-spacing:1px;
 }
 .form{
 width: 90%;
@@ -329,12 +541,13 @@ gap:5px;
 .form input[type="text"]{
     height: 10%;
     width: 70%;
-    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
 }
 .btn-index{
     height: 10%;
-    width: 14%;
-    font-size: 0.5rem;
+    width: 17%;
+    font-size: 0.8rem;
     margin: 0;
 }
 .div-footer h3{
@@ -362,12 +575,31 @@ gap:5px;
     height: 50%;
 }
 .list-footer a{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 }
-@media screen and (min-width:432px) and (max-width:720px){
+@media screen and (min-width:577px) and (max-width:768px){
+    .header-index {
+        display:flex;
+        justify-content:start;
+    }
+    .header-index nav{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    .header-index nav div{
+    position: fixed;
+    top:0;
+    padding-top: 10px;
+    }
+    .nav-title{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+    }
     .parrafo-main{
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
     .in-form{
         display: flex;
@@ -386,12 +618,13 @@ gap:5px;
     .form input[type="text"]{
         height: 25%;
         width: 70%;
+        text-transform: uppercase;
         font-size: 1rem;
     }
     .btn-index{
         height: 25%;
         width: 14%;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         margin: 0;
     }
     .div-footer h3{
@@ -425,42 +658,81 @@ gap:5px;
         font-size: 2rem;
     }
 }
-@media screen and (min-width:720px) and (max-width:860px){
+@media screen and (min-width:768px) and (max-width:992px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar div{
+        display: flex;
+        justify-content: end;
+    }
+    .ul-navbar{
+        margin-right: 0;
+    }
     .parrafo-main{
-        font-size: 1.2rem;
+        font-size: 1.7rem;
+        margin-top: 10px;
+        letter-spacing:1px;
+        padding-top: 150px;
+    }
+    .form input[type="text"]{
+        text-transform: uppercase;
     }
 }
-@media screen and (min-width:860px) and (max-width:960px){
-    .parrafo-main{
-        font-size: 1.2rem;
+@media screen and (min-width:993px) and (max-width:1200px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
-    .form{
-        margin: 0;
+    .navbar div{
+        display: flex;
+        justify-content: end;
     }
-}
-@media screen and (min-width:960px) and (max-width:1003px){
-    .parrafo-main{
-        font-size: 1.2rem;
-        margin: 0;
+    .ul-navbar{
+        margin-right: 0;
     }
-    .in-div{
-        gap:250px;
-    }
-    .form{
-        margin: 0;
-    }
-}
-@media screen and (min-width:1003px) and (max-width:1240px){
     .parrafo-main{
         font-size: 2rem;
+        margin-top: 10px;
+        padding-top: 190px;
+    }
+    .form{
         margin: 0;
-        padding: 0;
+    }
+    .form input[type="text"]{
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1400px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar div{
+        display: flex;
+        justify-content: end;
+    }
+    .ul-navbar{
+        margin-right: 0;
+    }
+    .parrafo-main{
+        font-size: 2rem;
+        margin-top: 10px;
+        padding-top: 80px;
     }
     .in-div{
         gap:200px;
     }
     .form{
         margin: 0;
+    }
+    .form input[type="text"]{
+        text-transform: uppercase;
     }
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
