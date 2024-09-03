@@ -820,7 +820,7 @@ text-decoration: underline;
     width: 100%;
     height: 100vh;
     background-color: #000000a4;
-    margin-top:95px;
+    margin-top:15vh;
     padding: 0;
 }
 
@@ -889,6 +889,121 @@ text-decoration: underline;
 }
 .main-ul li a:hover{
     color:#ffffff;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .header-so{
+        height:10vh;
+    }
+    .titulo-lispag{
+        font-size: 1rem;
+    }
+    .navbar{
+        display:flex;
+        justify-content: end;
+    }
+    .soporte{
+        backdrop-filter:blur(10px);
+        display: flex;
+        align-items: flex-start;
+    }
+    .ul-soporte{
+        display:flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .ul-soporte li a {
+        font-size: 0.7rem;
+    }
+    .sub-listas{
+        font-size: 1.2rem;
+    }
+    .main-sopor{
+        margin-top: 10vh;
+    }
+    .div-ol{
+        width:20%;
+        height:50%;
+    }
+    .main-ul li{
+        width:100%;
+        padding: 10px;
+    }
+    .main-ul li a{
+        font-size: 0.7rem;
+    }
+    .body-lista{
+        background-position: center;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:700px){
+    .titulo-lispag{
+        font-size: 1.4rem;
+    }
+    .sub-listas{
+        font-size: 1.2rem;
+    }
+    .navbar{
+        display:flex;
+        justify-content: end;
+    }
+    .soporte{
+        backdrop-filter:blur(10px);
+        width: 30%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .ul-soporte{
+        display:flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .div-ol{
+        width:20%;
+        height:50%;
+    }
+    .main-ul li{
+        width:100%;
+        padding: 10px;
+    }
+    .main-ul li a{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:768px){
+    .titulo-lispag{
+        font-size: 1.4rem;
+    }
+    .sub-listas{
+        font-size: 1.3rem;
+    }
+    .navbar{
+        display:flex;
+        justify-content: end;
+    }
+    .soporte{
+        backdrop-filter:blur(10px);
+        width: 30%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .ul-soporte{
+        display:flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .div-ol{
+        width:20%;
+        height:50%;
+    }
+    .main-ul li{
+        width:100%;
+        padding: 10px;
+    }
+    .main-ul li a{
+        font-size: 1rem;
+    }
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ESTILO DE PAGINA "ARTICULOS" */
