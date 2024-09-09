@@ -1,9 +1,14 @@
-@mixin position ($positions){
+@mixin position($positions) {
     position: $positions;
 }
-@mixin box ($paddin, $margin, $height, $width){
-    margin:$margin;
+@mixin box($padding, $margin, $height, $width) {
     padding: $padding;
+    margin: $margin;
     height: $height;
     width: $width;
+}
+@mixin texto ($font, $font-size, $textd, ){
+    font-family: $font;
+    font-size: $font-size;
+    text-decoration: $textd;
 }
