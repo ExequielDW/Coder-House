@@ -1,0 +1,1614 @@
+/* ESTILO DEL INDEX */
+/* Fondo del body */
+.body-index {
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(1, 24, 55, 1), rgb(4, 0, 29));
+    width: 100%;
+    height: 100vh;
+}
+
+/* Fuentes */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Header */
+.header-index {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 11vh;
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,21,52,255);
+}
+/* Estilos del navbar */
+.bg-navar{
+    background-color: rgba(0,21,52,255);
+    height: 100%;
+    font-family: arial;
+}
+/* estilo del titulo de la barra de navegacion */
+.nav-title{
+    color: rgba(254, 246, 136, 1);
+    font-size: 2rem;
+    font-family: "Bebas Neue";
+    letter-spacing:2px;
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+/* estilos de los link de la barra */
+.bg-navar a{
+    color: rgba(254, 246, 136, 1);
+}
+.bg-navar a:hover{
+    color:#fffbfb;
+    text-decoration: underline;
+}
+.bg-navar a:visited{
+    color: rgba(254, 246, 136, 1);
+}
+/* estilo del boton del menu comprimido */
+.btn-in{
+    border: 2px solid rgb(255, 211, 17);
+    box-shadow: 0  0 10px rgb(255, 255, 0);
+    background-color: rgb(35, 35, 155);
+}
+.btn-in:hover{
+    border: 2px solid rgb(255, 254, 250);
+}
+/* estilo del enalce que contiene el logo */
+.icono{
+    height: 100%;
+    padding:0 5px 0 0;
+    margin: 0;
+}
+/* Main */
+.main-index {
+    background-image: url("../Imagenes/caja-negra.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:12vh;
+    padding: 0;
+}
+/* Div del main */
+.sub2 {
+    margin: 10px;
+}
+.subtitulo {
+    text-align: center;
+    padding: 10px;
+    color: rgba(254, 246, 136, 1);
+    font-size: 45px;
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+/* Estilo del parrafo del main */
+.parrafo-main {
+    text-align: center;
+    color: rgb(255, 254, 254);
+    font-size: 35px;
+    font-family: "Bebas Neue";
+    margin-top: 250px; /*Separacion de subtitulo y parrafo*/
+    background:transparent;
+    backdrop-filter: blur(6px); /*Filtro de desenfoque para el parrafo*/
+    padding-top:10px;
+}
+span{
+    color:rgb(234, 255, 0);
+}
+/* Estilo del formulario */
+.form {
+    padding: 10px;
+    text-align: center;
+    margin-top:20px;
+    box-sizing: border-box;
+}
+.form input[type="text"] {
+    font-size: 18px; /* Ajusta el tamaño de la fuente según sea necesario */
+    padding: 10px; /* Ajusta el relleno interno según sea necesario */
+    width: 40%; /* Ajusta el ancho del input */
+    font-family: "Arial"; /*Fuente del imput*/
+    letter-spacing: 3px; /*Espacio entre letras*/
+    color:white;
+    box-sizing: border-box;
+    background:transparent;
+    border-color: 3px solid rgb(255, 79, 4);
+    border-radius: 5px;
+}
+.form input[type="text"]::placeholder{
+    color:white;
+    text-align: center;
+}
+/* Hover del textarea del input text y del boton buscar */
+.in-index:hover{
+background-color: rgb(243, 169, 155);
+background:linear-gradient(rgb(217, 220, 66), rgb(217, 213, 3));
+border-color: 3px solid rgb(255, 208, 0);
+box-shadow: 0 0 5px rgb(255, 255, 0);
+}
+.btn-index {
+    color: rgb(255, 255, 255);
+    background:linear-gradient(rgb(11, 3, 248), rgb(28, 28, 28)) ;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding:10px;
+    border: 2px solid rgb(0, 0, 49);
+    border-radius: 6px;
+    box-shadow:0 0 7px rgb(96, 231, 248);
+}
+.btn-index:hover{
+    background:linear-gradient(rgb(229, 227, 238), black) ;
+    border: 2px solid rgb(2, 2, 209);
+    color: rgb(0, 0, 0);
+}
+/* Footer */
+.footer-in{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgb(4, 0, 29),rgba(1, 24, 55, 1) );
+    padding: 0;
+    padding-top: 30px;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Estilo del div footer */
+.div-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+}
+/* Estilo del titulo del formulario */
+.div-footer h3{
+    color: rgba(254, 246, 136, 1);
+    font-family: arial;
+    font-size:1,5rem;
+    text-align: center;
+    display: inline-block;
+    align-self: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding:5px 0;
+    box-shadow: 0 0 5px grey;
+    width: 30%;
+}
+/* Estilo del formulario */
+.formulario--footer{
+    width: 30%;
+    height: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+.formulario--footer label{
+    color:#ffffff;
+    text-align: center;
+    font-family: arial;
+    font-size: 1rem;
+    width:100%;
+    box-sizing: border-box;
+}
+/* Estilo de los inputs */
+.input__footer{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    padding: 5px 4px;
+    background-color: rgb(226, 226, 226);
+    border: 2px solid rgb(93, 93, 93);
+    border-radius:5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.input__footer::placeholder{
+color:#777777;
+}
+.buton-submit{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow:0 0 10px rgb(169, 1, 181);
+    border: 1px solid rgb(3, 3, 170);
+    border-radius: 20px;
+    margin-top: 8px;
+    background:linear-gradient(rgb(3, 3, 74), transparent);
+    color: #ffffff;
+    max-width: 100%;
+}
+.buton-submit:hover{
+    background:linear-gradient(#d0ce70, rgb(158, 160, 3));
+    color:#000000;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+    border: 2px solid rgb(238, 255, 6);
+    border-radius: 20px;
+}
+/* estilo div que contiene imagen despues del formulario */
+.footer_div{
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgb(10, 3, 65);
+    border: 2px solid black;
+    background-color:rgb(1, 1, 31);
+}
+.footer-img{
+    max-width: 100%;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(89, 0, 97);
+    max-height: 100%;
+    height: auto;
+}
+/* Estilo div enlaces footer */
+.footer--enlaces{
+    background:linear-gradient(to right ,rgb(0, 0, 0), rgb(0, 0, 0));
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    align-items: flex-end;
+}
+
+/* Estilo y config del box de las listas */
+.list-footer {
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    margin: 0; /* Elimina el margen por defecto de la lista */
+}
+/* Estilo de los enlaces del footer */
+.end-footer {
+    font-family:"Bebas Neue";
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 20px; /*margen entre los enlaces*/
+    color: rgba(254, 246, 136, 1);
+}
+.end-footer:hover {
+    color: rgb(240, 240, 240);
+    text-decoration: underline;
+}
+
+/* Medias querys */
+@media screen and (min-width:320px) and (max-width:360px){
+    .header-index {
+        display:flex;
+        justify-content:start;
+    }
+    .header-index nav{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    .header-index nav div{
+    position: fixed;
+    top:0;
+    padding-top: 10px;
+    }
+    .nav-title{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+    }
+    .main-index{
+        height: 90%;
+        width:100%;
+        margin-top: 11vh;
+    }
+    .in-div{
+        gap:80px;
+    }
+    .subtitulo{
+        font-size: 2rem;
+    }
+    .in-form{
+        display: flex;
+        justify-content: center;
+    }
+    .parrafo-main{
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing:1px;
+    padding-bottom: 40px;
+    width: 100%;
+    margin: 0;
+    }
+    .form{
+    width: 100%;
+    height:70%;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    }
+    .form input[type="text"]{
+    height: 10%;
+    width: 70%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    }
+    .btn-index{
+    height: 10%;
+    width: 30%;
+    font-size: 0.8rem;
+    margin: 0;
+    }
+    .div-footer h3{
+    width:70%;
+    }
+    .formulario--footer{
+    width:70%;
+    height: 20%;
+    }
+    .footer-img{
+    height: 90%;
+    border-radius: 3px;
+    }
+    .footer_div{
+    height: 20%;
+    }
+    .footer--enalces{
+    background-color: #d0ce70;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .footer--enalces nav{
+    height: 50%;
+    }
+    .list-footer a{
+    font-size: 0.7rem;
+    }
+}
+@media screen and (min-width:360px) and (max-width:480px){
+    .header-index {
+        display:flex;
+        justify-content:start;
+    }
+    .header-index nav{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    .header-index nav div{
+    position: fixed;
+    top:0;
+    padding-top: 10px;
+    }
+    .nav-title{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+    }
+    .main-index{
+        height: 90%;
+        width:100%;
+        margin-top: 11vh;
+    }
+    .in-div{
+        gap:100px;
+    }
+    .subtitulo{
+        font-size: 2rem;
+    }
+    .in-form{
+        display: flex;
+        justify-content: center;
+    }
+    .parrafo-main{
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing:1px;
+    padding-bottom: 90px;
+    width: 100%;
+    margin: 0;
+    }
+    .form{
+    width: 100%;
+    height:70%;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    }
+    .form input[type="text"]{
+    height: 10%;
+    width: 70%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    }
+    .btn-index{
+    height: 10%;
+    width: 20%;
+    font-size: 0.8rem;
+    margin: 0;
+    }
+    .div-footer h3{
+    width:70%;
+    }
+    .formulario--footer{
+    width:70%;
+    height: 20%;
+    }
+    .footer-img{
+    height: 90%;
+    border-radius: 3px;
+    }
+    .footer_div{
+    height: 20%;
+    }
+    .footer--enalces{
+    background-color: #d0ce70;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .footer--enalces nav{
+    height: 50%;
+    }
+    .list-footer{
+        display: flex;
+        align-items: center;
+    }
+    .list-footer a{
+    font-size: 0.9rem;
+    }
+}
+@media screen and (min-width:481px) and (max-width:576px){
+    .header-index {
+        display:flex;
+        justify-content:start;
+    }
+    .header-index nav{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+.header-index nav div{
+    position: fixed;
+    top:0;
+    padding-top: 10px;
+}
+.nav-title{
+font-size: 2rem;
+text-align: center;
+padding-top: 10px;
+    }
+    .main-index{
+        height: 70vh;
+    }
+    .subtitulo{
+        font-size: 2rem;
+    }
+    .in-div{
+        gap:100px;
+    }
+    .in-form{
+        display: flex;
+        justify-content: center;
+    }
+    .parrafo-main{
+    margin-top:10px;
+    text-align:left;
+    font-size: 1.4rem;
+    text-align: center;
+    letter-spacing:1px;
+}
+.form{
+width: 90%;
+height:70%;
+padding: 0;
+display: flex;
+margin: 0;
+align-items: center;
+justify-content: center;
+gap:5px;
+}
+.form input[type="text"]{
+    height: 10%;
+    width: 70%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.btn-index{
+    height: 10%;
+    width: 17%;
+    font-size: 0.8rem;
+    margin: 0;
+}
+.div-footer h3{
+    width:50%;
+}
+.formulario--footer{
+    width:50%;
+    height: 20%;
+}
+.footer-img{
+    height: 90%;
+    border-radius: 3px;
+}
+.footer_div{
+    height: 20%;
+}
+.footer--enalces{
+    background-color: #d0ce70;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer--enalces nav{
+    height: 50%;
+}
+.list-footer a{
+    font-size: 0.9rem;
+}
+}
+@media screen and (min-width:577px) and (max-width:768px){
+    .header-index {
+        display:flex;
+        justify-content:start;
+    }
+    .header-index nav{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    .header-index nav div{
+    position: fixed;
+    top:0;
+    padding-top: 10px;
+    }
+    .nav-title{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+    }
+    .parrafo-main{
+        font-size: 1.7rem;
+    }
+    .in-form{
+        display: flex;
+        justify-content: center;
+    }
+    .form{
+    width: 90%;
+    height:30%;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    }
+    .form input[type="text"]{
+        height: 25%;
+        width: 70%;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .btn-index{
+        height: 25%;
+        width: 14%;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    .div-footer h3{
+        width:50%;
+    }
+    .formulario--footer{
+        width:50%;
+        height: 20%;
+    }
+    .footer-img{
+        height: 90%;
+        border-radius: 3px;
+    }
+    .footer_div{
+        height: 20%;
+    }
+    .footer--enalces{
+        background-color: #d0ce70;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer--enalces nav{
+        height: 50%;
+    }
+    .list-footer a{
+        font-size: 1rem;
+    }
+    .subtitulo{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar div{
+        display: flex;
+        justify-content: end;
+    }
+    .ul-navbar{
+        margin-right: 0;
+    }
+    .parrafo-main{
+        font-size: 1.7rem;
+        margin-top: 10px;
+        letter-spacing:1px;
+        padding-top: 150px;
+    }
+    .form input[type="text"]{
+        text-transform: uppercase;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar div{
+        display: flex;
+        justify-content: end;
+    }
+    .ul-navbar{
+        margin-right: 0;
+    }
+    .parrafo-main{
+        font-size: 2rem;
+        margin-top: 10px;
+        padding-top: 190px;
+    }
+    .form{
+        margin: 0;
+    }
+    .form input[type="text"]{
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1400px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar div{
+        display: flex;
+        justify-content: end;
+    }
+    .ul-navbar{
+        margin-right: 0;
+    }
+    .parrafo-main{
+        font-size: 2rem;
+        margin-top: 10px;
+        padding-top: 80px;
+    }
+    .in-div{
+        gap:200px;
+    }
+    .form{
+        margin: 0;
+    }
+    .form input[type="text"]{
+        text-transform: uppercase;
+    }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ESTILOS DE PAGINA DE SOPORTE */
+/* Estilo para el cuerpo de la página */
+.body-lista {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Imagenes/soporte.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Estilo para el encabezado */
+.header-so {
+    width: 100%;
+    height: 15vh;
+    background-color: #010114;
+    display: flex;
+    align-items: center;
+    gap:50px;
+    position: fixed;
+    top: 0; /* Asegura que el encabezado esté en la parte superior */
+    left: 0; /* Asegura que el encabezado esté alineado a la izquierda */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del título en el encabezado */
+.titulo-lispag {
+    align-self: center;
+    color: rgb(253, 248, 248);
+    height: auto;
+    width: 30%;
+    font-family: "Protest Guerrilla", sans-serif;
+    letter-spacing: 3px;
+    margin: 0 10px;
+}
+/* Estilo del navbar */
+.nav-soporte{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.soporte{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+.button-soporte{
+    position: relative;
+    right: 0;
+    border:2px solid white;
+}
+/* Estilo de los enlaces dentro de los elementos de la lista */
+.ul-soporte{
+    gap:10px;
+    color:#ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+.ul-soporte li{
+    display: flex;
+    align-items: center;
+}
+.ul-soporte li a{
+    color:#ffffff;
+    padding: 10px;
+    font-family: "Protest Guerrilla", sans-serif;
+    letter-spacing:2px;
+}
+/* estilos al pasar el mouse */
+.ul-soporte li a:hover{
+color:#a800b1;
+text-decoration: underline;
+}
+/* Estilo del main */
+.main-sopor{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000a4;
+    margin-top:15vh;
+    padding: 0;
+}
+
+/* Estilo del subtitulo h2 */
+.sub-listas{
+    color:rgb(0, 254, 250);
+    text-decoration: underline;
+    font-family: "Protest Guerrilla", sans-serif;
+    letter-spacing: 2px;
+    margin:0;
+    text-align: center;
+}
+/* Estilo del div que contiene la lista ordenada */
+.div-ol{
+    width: 10%;
+    min-width: 10%;
+    height: 40%;
+    margin-top: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 2px solid black;
+    background-color: #b4b2b2;
+    position: fixed;
+    left: 0;
+}
+.div-ol:hover{
+    border:2px solid blue ;
+    border-radius: 4px;
+}
+.main_nav-lateral{
+    width:100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.main-ul li{
+    border-bottom:2px solid rgb(4, 107, 111);
+    transition: all 0.2s ease-in;
+    padding: 20px;
+    text-align: center;
+    font-family: arial;
+    width: 100%;
+    font-weight: bold;
+    gap:10px;
+}
+.main-ul li a{
+    color:#070707;
+    text-decoration: none;
+}
+.main-ul li:hover{
+    background-color: rgb(3, 14, 94);
+    border-bottom: 4px solid rgb(250, 0, 0);
+}
+.main-ul li a:hover{
+    color:#ffffff;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    .header-so{
+        height:10vh;
+    }
+    .titulo-lispag{
+        font-size: 1rem;
+    }
+    .navbar{
+        display:flex;
+        justify-content: end;
+    }
+    .soporte{
+        backdrop-filter:blur(10px);
+        display: flex;
+        align-items: flex-start;
+    }
+    .ul-soporte{
+        display:flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .ul-soporte li a {
+        font-size: 0.7rem;
+    }
+    .sub-listas{
+        font-size: 1.2rem;
+    }
+    .main-sopor{
+        margin-top: 10vh;
+    }
+    .div-ol{
+        width:20%;
+        height:50%;
+    }
+    .main-ul li{
+        width:100%;
+        padding: 10px;
+    }
+    .main-ul li a{
+        font-size: 0.7rem;
+    }
+    .body-lista{
+        background-position: center;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:700px){
+    .titulo-lispag{
+        font-size: 1.4rem;
+    }
+    .sub-listas{
+        font-size: 1.2rem;
+    }
+    .navbar{
+        display:flex;
+        justify-content: end;
+    }
+    .soporte{
+        backdrop-filter:blur(10px);
+        width: 30%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .ul-soporte{
+        display:flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .div-ol{
+        width:20%;
+        height:50%;
+    }
+    .main-ul li{
+        width:100%;
+        padding: 10px;
+    }
+    .main-ul li a{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:768px){
+    .titulo-lispag{
+        font-size: 1.4rem;
+    }
+    .sub-listas{
+        font-size: 1.3rem;
+    }
+    .navbar{
+        display:flex;
+        justify-content: end;
+    }
+    .soporte{
+        backdrop-filter:blur(10px);
+        width: 30%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .ul-soporte{
+        display:flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .div-ol{
+        width:20%;
+        height:50%;
+    }
+    .main-ul li{
+        width:100%;
+        padding: 10px;
+    }
+    .main-ul li a{
+        font-size: 1rem;
+    }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ESTILO DE PAGINA "ARTICULOS" */
+/* Estilos del body */
+.body-art {
+    background: linear-gradient(to right, rgb(11, 12, 31), rgb(4, 3, 22));
+    background-size: cover;
+    width: 100%;
+    height: 100vh; /* Utiliza 100vh para el viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del header */
+.header-art {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    height: 10vh; /* Altura del header */
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    background:linear-gradient(to right, rgb(55, 0, 105),rgb(130, 0, 72));
+    box-shadow: 0 0 5px rgb(147, 0, 220);
+    top: 0;
+    left: 0; /* Asegura que el header esté alineado a la izquierda */
+}
+.navbar{
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-primaria{
+    background-color:transparent;
+}
+.bg-second{
+    color:#ffffff;
+}
+.buton-nav{
+    border: 1px solid rgb(34, 2, 49);
+    box-shadow: 0 0 10px rgb(20, 164, 242);
+}
+.buton-nav:hover{
+    background-color: #e0e0e0;
+    border: 1px solid rgb(0, 4, 239);
+    box-shadow: 0 0 10px rgb(8, 0, 255);
+}
+.buton-lat{
+    backdrop-filter:blur(5px);
+    background-color: transparent;
+    color: #ffffff;
+}
+.div-lat a{
+    color:#9700b5;
+}
+.div-lat a:visited{
+    color:#760064;
+}
+.div-lat a:hover{
+    color:rgb(251, 120, 181);
+}
+.menu-lat a{
+    color:rgb(0, 0, 0);
+}
+.menu-lat a:hover{
+    color:#f977db;
+}
+/* Estilo del contenedor principal */
+.main-art {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh; /* Utiliza 100vh para el viewport height */
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid black;
+    box-sizing: border-box;
+    padding-top: 11vh; /* Ajusta el padding-top para compensar la altura del header */
+}
+
+/* Medios de comunicación para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .sub-art {
+        font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        left: 0;
+        transform: none; /* Elimina el centrado horizontal cuando hay poco espacio */
+    }
+
+    .ul {
+        flex-direction: column; /* Coloca los enlaces en columna en lugar de fila */
+        gap: 10px;
+    }
+
+    .link {
+        height: auto; /* Ajusta la altura de los enlaces para que se adapten a pantallas más pequeñas */
+    }
+
+    .link-in a {
+        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .header-art {
+        height: 11vh; /* Ajusta la altura del header en pantallas más pequeñas */
+    }
+
+    .main-art {
+        padding-top: 15vh; /* Ajusta el padding-top en función del nuevo tamaño del header */
+        height: 180vh;
+    }
+    .footer-art{
+        margin: 0;
+    }
+}
+
+/* Estilo del contenedor principal */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del contenedor de contenido */
+.flex-contenido {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de los artículos */
+.art-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(20% - 20px); /* Ajuste para el espacio del gap */
+    min-width: 200px; /* Tamaño mínimo para mantener la legibilidad */
+    height: auto; /* Ajuste automático de la altura */
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño total */
+    transition: border 0.3s ease;
+    padding: 10px; /* Añadido relleno para evitar el desbordamiento del contenido */
+    overflow: hidden; /* Previene el desbordamiento del contenido */
+}
+
+.art-b:hover {
+    border: 1px solid rgb(0, 80, 94);
+    box-shadow: 0 0 20px rgb(0, 255, 242);
+}
+
+/* Estilo de las imágenes en los artículos */
+.img-art {
+    width: 90%;
+    height: auto; /* Ajusta la altura proporcionalmente */
+    max-width: 100%; /* Evita que la imagen se expanda más allá del contenedor */
+}
+
+/* Estilo de los enlaces en los artículos */
+.href-main {
+    display: inline-block;
+    padding: 3px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    border: 2px solid black;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.href-main:hover {
+    background: linear-gradient(rgb(64, 1, 1), rgb(139, 3, 3));
+    color: #ffffff;
+    border: 1px solid rgb(215, 0, 0);
+    box-shadow: 0 0 9px red;
+}
+
+/* Estilo de los encabezados h3 en los divs */
+.sub-main {
+    font-family: Arial, sans-serif;
+    font-size: 1.125rem; /* Tamaño relativo para mejor adaptabilidad */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de los párrafos dentro de los artículos */
+.art-b p {
+    font-family: Arial, sans-serif;
+    border-top: 2px solid black;
+    text-align: left;
+    margin: 0; /* Asegura que el párrafo no tenga margen extra que cause desbordamiento */
+    overflow-wrap: break-word; /* Asegura que el texto se ajuste dentro del contenedor */
+    width: 100%; /* Hace que el párrafo ocupe el ancho completo del contenedor */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño total */
+}
+
+
+/* Estilos del footer */
+.footer-art{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer-divart{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-art h3{
+    font-size: 1rem;
+    font-family: arial;
+    color:white;
+    padding-top: 20px 5px;
+}
+.footer-art img{
+max-width: 50%;
+width: 200px;
+height: 200px;
+border: 2px solid black;
+border-radius: 5px;
+
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ESTILO DE PAGINA SOBRE NOSOTROS */
+/* Estilo del fondo del body */
+.tablas {
+    background-image: url("../Imagenes/sobre-nosotros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+/* Estilo de titulo */
+.title_table{
+    text-align: center;
+    color: rgb(255, 251, 251);
+    font-size: 30px;
+    border-bottom:3px solid rgb(78, 78, 78);
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue";
+    background:rgba(0, 0, 0, 0.426);
+}
+/* Estilo del div */
+.main-tb{
+    text-align:center; /*alineacion del parrafo*/
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color:rgb(243, 239, 239);
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.343);
+    padding:0;
+}
+.div-sb{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: #00000074;
+    margin:0;
+}
+.span-tb a{
+    font-weight: bold;
+    color: rgb(246, 2, 2);
+    text-decoration: none;
+}
+.span-tb a:hover{
+    border: 1px solid rgb(152, 0, 0);
+    box-shadow:0 0 8px rgb(255, 26, 26);
+    border-radius: 4px;
+    background-color: #be0202;
+    color:#ffffff;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* BIOGRAFIAS */
+/* Estilo del body */
+.html-bi{
+    margin:0;
+    padding: 0;
+}
+.body-bi{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    background:linear-gradient(to right, rgb(8, 0, 0), rgb(64, 0, 0))
+}
+/* Estilo del header */
+.header-bi{
+    background:linear-gradient(rgb(116, 0, 0),rgb(3, 1, 1));
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+.bio-ti{
+    font-family:"Bebas Neue",arial;
+    font-size: 2rem;
+    color: #f5f6f7;
+}
+/* estilos links del navbar */
+.bg-navarbio a:hover{
+color:#fb02ff;
+}
+.bg-navarbio a{
+color:#ffffff;
+}
+
+/* Estilo del boton */
+.btn-bi{
+    border: 2px solid white;
+}
+/* Estilos del main */
+.section-bi{
+    padding: 10px;
+}
+.cont-bi{
+margin: 11vh;
+}
+/* Estilo del subtitulo principal*/
+.div-mainbi h2{
+    color:#f5f6f7;
+    font-family: "Bungee Tint", sans-serif;
+}
+
+/* Estilos de los div que tienen los articulos */
+.articulos-bio{
+    background-color: #e0e0e0;
+    border: 2px solid black;
+    transition:all 0.2s ease-in;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "sans-serif",arial;
+    font-weight: bold;
+}
+.articulos-bio:hover{
+background-color: #47023d;
+color: #ffffff;
+}
+/* estilos boton de leer */
+.buton-bi{
+border:2px solid rgb(0, 0, 42);
+box-shadow: 0 0 10px rgb(0, 0, 116);
+border-radius: 10px;
+}
+.a-button{
+    color:#070707;
+}
+.buton-bi:active{
+    color:rgb(252, 248, 255);
+    background-color: #47023d;
+    box-shadow: 0 0 10px rgb(65, 0, 71);
+    border: 2px solid rgb(250, 32, 210);
+}
+@media screen and (max-width:730px){
+    .contenedor-bio{
+        gap:10px;
+    }
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ESTILOS DE PORTFOLIO */
+.bd-portafolios,.bg-primario{
+    background-color: #fff;
+}
+/* Estilos de barra de navegacion */
+.bg-primario{
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link:hover{
+    color:#4c0450;
+    font-weight: bold;
+}
+/* Estilos generales de las secciones */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilo del titulo portfolio */
+.hero-titulo{
+    font-size: 2.5rem;
+    font-family: "Rubik Dirt"
+}
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+/* estilo del div contenido en section hero */
+.hero-principal{
+    padding: 3rem;
+
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+/* estilo imagen del div */
+.hero-imagen{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+/* estilo del segundo div de section hero */
+.hero-inferior-imagen{
+    width: 100px;
+    height: 100px;
+}
+/* estilo de seccion sobre mi */
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+.seccion-oscura{
+    background-color: #02021f;
+    color:white;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt',cursive;
+}
+.seccion-texto{
+    font-size: 1.2rem;
+}
+/* experiencia */
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin:10px 0;
+}
+.seccion-clara{
+    color:black;
+    background-color: #fff;
+}
+.experiencia i{
+    font-size: 2.5rem;
+    color:#7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.badges-contendeor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badge{
+    margin: 5px;
+}
+.experiencia .columna{
+    display: flex;
+    padding: 20px;
+    border: 2px solid #8080804d;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition:all 0.2s ease-in;
+}
+.experiencia .columna:hover{
+    color:white;
+    background-color: #1b1b32;
+}
+/* proyectos */
+.proyectos-recientes{
+    padding: 40px;
+}
+/* estilo imagenes proyecto */
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display:block;
+    transition:all 0.2s ease;
+}
+/* estilo contenedor de proyectos */
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.texto-negro{
+    color:black;
+}
+.texto-blanco{
+    color:white;
+}
+.btn-info{
+    font-size: 1.1rem;
+    margin: 20px;
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color:#584e4e;
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity:0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+/* estilos de iconos  */
+.overlay .iconos-contendor{
+    display: flex;
+}
+.overlay i{
+    color:black;
+    font-size: 60px;
+    margin: 10px;
+}
+.proyecto{
+    position: relative;
+}
+/* estilo del overlay cuando pasamos mouse por encima */
+.proyecto:hover .overlay{
+    opacity:1;
+}
+/* estilo de la imagen al pasar el mouse cambia su opacidad */
+.proyecto:hover img{
+    opacity:0.2
+}
+/* estilos articulos */
+.articulos{
+    min-height: 500px;
+    padding: 30px;
+
+}
+.articulos .card{
+    width: 80%;
+    max-width: 800px;
+    margin: 20px;
+}
+.card-header{
+    font-weight: bold;
+}
+
+/* Media querys para hacerlo responsivo y cambiar estilos segun pantalla */
+@media screen and (max-width:400px){
+.overlay p{
+    font-size: 18px;
+}
+.overlay i{
+    font-size: 40px;
+}
+}
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+@media screen and (min-width:700px){
+    .hero-inferior-imagen{
+        max-width: 100px;
+    }
+}
