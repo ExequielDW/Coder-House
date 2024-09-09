@@ -2,3 +2,9 @@
     display:flex;
     justify-content:center;
 }
+%flexcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

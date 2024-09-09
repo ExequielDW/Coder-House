@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.div-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ESTILO DEL INDEX */
 /* Fondo del body */
 .body-index {
@@ -164,33 +171,28 @@
 
 /* Footer */
 .footer-in {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgb(4, 0, 29), rgb(1, 24, 55));
   padding: 0;
-  padding-top: 30px;
   margin: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgb(4, 0, 29), rgb(1, 24, 55));
+  padding-top: 30px;
   box-sizing: border-box;
 }
 
 /* Estilo del div footer */
 .div-footer {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 80%;
   padding: 20px;
-  /* Estilo del titulo del formulario */
+  margin: 0;
+  height: 80%;
+  width: 100%;
+  /* Estilo del título del formulario */
 }
 .div-footer h3 {
   color: rgb(254, 246, 136);
-  font-family: arial;
-  font-size: 1, 5rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
   text-align: center;
   display: inline-block;
   align-self: center;
@@ -325,7 +327,7 @@
     display: flex;
     justify-content: center;
   }
-  .header-index nav div {
+  .header-index div {
     position: fixed;
     top: 0;
     padding-top: 10px;
