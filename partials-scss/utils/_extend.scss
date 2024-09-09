@@ -2,7 +2,12 @@
     display:flex;
     justify-content:center;
 }
-%flexcol {
+%flexs{
+    display:flex;
+    justify-content: center;
+    align-items: end;
+}
+%flexco{
     display: flex;
     flex-direction: column;
     justify-content: center;

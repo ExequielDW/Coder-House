@@ -12,3 +12,8 @@
     font-size: $font-size;
     text-decoration: $textd;
 }
+@mixin flexs ($justify, $align, ){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

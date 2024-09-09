@@ -1,5 +1,10 @@
 @charset "UTF-8";
-.div-footer {
+.footer_div {
+  display: flex;
+  justify-content: center;
+}
+
+.div-footer, .formulario--footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,8 +196,6 @@
 }
 .div-footer h3 {
   color: rgb(254, 246, 136);
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem;
   text-align: center;
   display: inline-block;
   align-self: center;
@@ -201,24 +204,29 @@
   padding: 5px 0;
   box-shadow: 0 0 5px grey;
   width: 30%;
+  font-family: "Arial, sans-serif";
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 /* Estilo del formulario */
 .formulario--footer {
-  width: 30%;
-  height: 60%;
-  padding: 10px;
-  box-sizing: border-box;
-  box-shadow: 0 0 5px grey;
   display: flex;
   align-self: center;
   flex-direction: column;
+  padding: 10px;
+  margin: 0;
+  height: 60%;
+  width: 30%;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px grey;
 }
 .formulario--footer label {
   color: #ffffff;
   text-align: center;
-  font-family: arial;
+  font-family: "arial";
   font-size: 1rem;
+  text-decoration: none;
   width: 100%;
   box-sizing: border-box;
 }
@@ -227,12 +235,11 @@
 .input__footer {
   max-width: 100%;
   max-height: 100%;
-  padding: 0;
   padding: 5px 4px;
+  margin: 0;
   background-color: rgb(226, 226, 226);
   border: 2px solid rgb(93, 93, 93);
   border-radius: 5px;
-  margin: 0;
   box-sizing: border-box;
 }
 .input__footer::placeholder {
@@ -261,12 +268,10 @@
 
 /* estilo div que contiene imagen despues del formulario */
 .footer_div {
-  width: 100%;
-  height: 70%;
-  margin: 0;
   padding: 10px;
-  display: flex;
-  justify-content: center;
+  margin: 0;
+  height: 70%;
+  width: 100%;
   box-sizing: border-box;
   box-shadow: 0 0 5px rgb(10, 3, 65);
   border: 2px solid black;
@@ -287,9 +292,9 @@
   background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   width: 100%;
   height: 10%;
-  align-items: flex-end;
 }
 
 /* Estilo y config del box de las listas */
@@ -304,9 +309,9 @@
 /* Estilo de los enlaces del footer */
 .end-footer {
   font-family: "Bebas Neue";
-  letter-spacing: 2px;
   font-size: 1.3rem;
   text-decoration: none;
+  letter-spacing: 2px;
   padding: 10px;
   margin-right: 20px; /*margen entre los enlaces*/
   color: rgb(254, 246, 136);
@@ -759,21 +764,23 @@
 /* ESTILOS DE PAGINA DE SOPORTE */
 /* Estilo para el cuerpo de la página */
 .body-lista {
-  width: 100%;
+  padding: 0;
+  margin: 0;
   height: 100vh;
+  width: 100%;
   background-image: url("../Imagenes/soporte.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /* Estilo para el encabezado */
 .header-so {
-  width: 100%;
+  padding: 0;
+  margin: 0;
   height: 15vh;
+  width: 100%;
   background-color: #010114;
   display: flex;
   align-items: center;
@@ -781,8 +788,6 @@
   position: fixed;
   top: 0; /* Asegura que el encabezado esté en la parte superior */
   left: 0; /* Asegura que el encabezado esté alineado a la izquierda */
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -845,11 +850,12 @@
 
 /* Estilo del main */
 .main-sopor {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6431372549);
-  margin-top: 15vh;
   padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  margin-top: 15vh;
+  background-color: rgba(0, 0, 0, 0.6431372549);
 }
 
 /* Estilo del subtitulo h2 */
@@ -876,30 +882,29 @@
   position: fixed;
   left: 0;
 }
-
 .div-ol:hover {
   border: 2px solid blue;
   border-radius: 4px;
 }
 
 .main_nav-lateral {
-  width: 100%;
-  height: 100%;
   padding: 0;
   margin: 0;
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
 }
 
 .main-ul {
-  width: 100%;
-  height: 100%;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
 }
 
 .main-ul li {
@@ -1345,7 +1350,6 @@
   color: rgb(246, 2, 2);
   text-decoration: none;
 }
-
 .span-tb a:hover {
   border: 1px solid rgb(152, 0, 0);
   box-shadow: 0 0 8px rgb(255, 26, 26);
@@ -1363,10 +1367,10 @@
 }
 
 .body-bi {
-  width: 100%;
-  height: 100vh;
   padding: 0;
   margin: 0;
+  height: 100vh;
+  width: 100%;
   box-sizing: border-box;
   background: linear-gradient(to right, rgb(8, 0, 0), rgb(64, 0, 0));
 }
@@ -1389,12 +1393,11 @@
 }
 
 /* estilos links del navbar */
-.bg-navarbio a:hover {
-  color: #fb02ff;
-}
-
 .bg-navarbio a {
   color: #ffffff;
+}
+.bg-navarbio a:hover {
+  color: #fb02ff;
 }
 
 /* Estilo del boton */
@@ -1427,7 +1430,6 @@
   font-family: "sans-serif", arial;
   font-weight: bold;
 }
-
 .articulos-bio:hover {
   background-color: #47023d;
   color: #ffffff;
@@ -1502,7 +1504,6 @@ section {
 .hero-principal {
   padding: 3rem;
 }
-
 .hero-principal h2 {
   font-size: 1.5rem;
   color: #615151;
@@ -1583,11 +1584,11 @@ section {
 
 .experiencia .columna {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
   padding: 20px;
   border: 2px solid rgba(128, 128, 128, 0.3019607843);
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   transition: all 0.2s ease-in;
 }
 
@@ -1712,4 +1713,4 @@ section {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

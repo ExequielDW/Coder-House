@@ -151,15 +151,13 @@
 }
 /* Estilo del div footer */
 .div-footer {
-    @extend %flexcol; // Extiende el placeholder
+    @extend %flexco;
     box-sizing: border-box;
     @include mixins.box(20px, 0, 80%, 100%); // Usa el mixin
 
     /* Estilo del título del formulario */
     h3 {
         color: nth($colores, 9); // Usa el color de la lista
-        font-family: Arial, sans-serif;
-        font-size: 1.5rem; // Corrige la coma por un punto
         text-align: center;
         display: inline-block;
         align-self: center;
@@ -168,24 +166,23 @@
         padding: 5px 0;
         box-shadow: 0 0 5px grey;
         width: 30%;
+        @include mixins.texto('Arial, sans-serif', 1.5rem, none);
     }
 }
 
 /* Estilo del formulario */
 .formulario--footer{
-    width: 30%;
-    height: 60%;
-    padding: 10px;
-    box-sizing: border-box;
-    box-shadow: 0 0 5px grey;
+    @extend %flexco;
     display: flex;
     align-self: center;
     flex-direction: column;
+    @include mixins.box(10px, 0, 60%, 30%);
+    box-sizing: border-box;
+    box-shadow: 0 0 5px grey;
     label{
         color:#ffffff;
         text-align: center;
-        font-family: arial;
-        font-size: 1rem;
+        @include mixins.texto('arial', 1rem, none);
         width:100%;
         box-sizing: border-box;
     }
@@ -194,12 +191,11 @@
 .input__footer{
     max-width: 100%;
     max-height: 100%;
-    padding: 0;
     padding: 5px 4px;
+    margin: 0;
     background-color: rgb(226, 226, 226);
     border: 2px solid rgb(93, 93, 93);
     border-radius:5px;
-    margin: 0;
     box-sizing: border-box;
     &::placeholder{
     color:nth($colores, 7);
@@ -226,12 +222,8 @@
 }
 /* estilo div que contiene imagen despues del formulario */
 .footer_div{
-    width: 100%;
-    height: 70%;
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+    @include mixins.box(10px, 0, 70%, 100%);
+    @extend %flex;
     box-sizing: border-box;
     box-shadow: 0 0 5px rgb(10, 3, 65);
     border: 2px solid black;
@@ -248,11 +240,9 @@
 /* Estilo div enlaces footer */
 .footer--enlaces{
     background:linear-gradient(to right ,rgb(0, 0, 0), rgb(0, 0, 0));
-    display: flex;
-    justify-content: center;
+    @include mixins.flexs(center, flex-end);
     width: 100%;
     height: 10%;
-    align-items: flex-end;
 }
 
 /* Estilo y config del box de las listas */
@@ -265,10 +255,8 @@
 }
 /* Estilo de los enlaces del footer */
 .end-footer {
-    font-family:"Bebas Neue";
+    @include mixins.texto('Bebas Neue', 1.3rem, none);
     letter-spacing: 2px;
-    font-size: 1.3rem;
-    text-decoration: none;
     padding: 10px;
     margin-right: 20px; /*margen entre los enlaces*/
     color: nth($colores, 9);
@@ -722,29 +710,23 @@ gap:5px;
 /* ESTILOS DE PAGINA DE SOPORTE */
 /* Estilo para el cuerpo de la página */
 .body-lista {
-    width: 100%;
-    height: 100vh;
+    @include mixins.box(0, 0, 100vh, 100%);
     background-image: url("../Imagenes/soporte.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 /* Estilo para el encabezado */
 .header-so {
-    width: 100%;
-    height: 15vh;
+    @include mixins.box(0, 0, 15vh, 100%);
     background-color: #010114;
     display: flex;
     align-items: center;
     gap:50px;
-    position: fixed;
+    @include mixins.position(fixed);
     top: 0; /* Asegura que el encabezado esté en la parte superior */
     left: 0; /* Asegura que el encabezado esté alineado a la izquierda */
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -765,9 +747,7 @@ gap:5px;
     width: 100%;
 }
 .soporte{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    @include mixins.flexs(end,center);
     width: 100%;
 }
 .button-soporte{
@@ -800,11 +780,9 @@ text-decoration: underline;
 }
 /* Estilo del main */
 .main-sopor{
-    width: 100%;
-    height: 100vh;
-    background-color: #000000a4;
+    @include mixins.box(0, 0, 100vh, 100%);
     margin-top:15vh;
-    padding: 0;
+    background-color: #000000a4;
 }
 
 /* Estilo del subtitulo h2 */
@@ -829,28 +807,20 @@ text-decoration: underline;
     background-color: #b4b2b2;
     position: fixed;
     left: 0;
-}
-.div-ol:hover{
-    border:2px solid blue ;
-    border-radius: 4px;
+    &:hover{
+        border:2px solid blue ;
+        border-radius: 4px;
+    }
 }
 .main_nav-lateral{
-    width:100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
+    @include mixins.box(0, 0, 100%, 100%);
     box-sizing: border-box;
 }
 .main-ul{
-    width: 100%;
-    height: 100%;
-    list-style-type: none;
-    display:flex;
+    @include mixins.box(0, 0, 100%, 100%);
+    @include mixins.flexs(space-around, center);
     flex-direction: column;
-    align-items:center;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
 }
 .main-ul li{
     border-bottom:2px solid rgb(4, 107, 111);
@@ -1281,13 +1251,13 @@ border-radius: 5px;
     font-weight: bold;
     color: rgb(246, 2, 2);
     text-decoration: none;
-}
-.span-tb a:hover{
-    border: 1px solid rgb(152, 0, 0);
-    box-shadow:0 0 8px rgb(255, 26, 26);
-    border-radius: 4px;
-    background-color: #be0202;
-    color:#ffffff;
+    &:hover{
+        border: 1px solid rgb(152, 0, 0);
+        box-shadow:0 0 8px rgb(255, 26, 26);
+        border-radius: 4px;
+        background-color: #be0202;
+        color:#ffffff;
+    }
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* BIOGRAFIAS */
@@ -1297,10 +1267,7 @@ border-radius: 5px;
     padding: 0;
 }
 .body-bi{
-    width: 100%;
-    height: 100vh;
-    padding: 0;
-    margin:0;
+    @include mixins.box(0, 0, 100vh, 100%);
     box-sizing: border-box;
     background:linear-gradient(to right, rgb(8, 0, 0), rgb(64, 0, 0))
 }
@@ -1320,11 +1287,11 @@ border-radius: 5px;
     color: #f5f6f7;
 }
 /* estilos links del navbar */
-.bg-navarbio a:hover{
-color:#fb02ff;
-}
 .bg-navarbio a{
-color:#ffffff;
+    color:#ffffff;
+    &:hover{
+    color:#fb02ff;
+    }
 }
 
 /* Estilo del boton */
@@ -1353,10 +1320,10 @@ margin: 11vh;
     box-sizing: border-box;
     font-family: "sans-serif",arial;
     font-weight: bold;
-}
-.articulos-bio:hover{
-background-color: #47023d;
-color: #ffffff;
+    &:hover{
+    background-color: #47023d;
+    color: #ffffff;
+    }
 }
 /* estilos boton de leer */
 .buton-bi{
@@ -1416,11 +1383,10 @@ section{
 /* estilo del div contenido en section hero */
 .hero-principal{
     padding: 3rem;
-
-}
-.hero-principal h2{
+    h2{
     font-size: 1.5rem;
     color: #615151;
+    }
 }
 /* estilo imagen del div */
 .hero-imagen{
@@ -1484,12 +1450,10 @@ section{
     margin: 5px;
 }
 .experiencia .columna{
-    display: flex;
+    @include mixins.flexs(space-evenly, center);
+    flex-direction: column;
     padding: 20px;
     border: 2px solid #8080804d;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     transition:all 0.2s ease-in;
 }
 .experiencia .columna:hover{
