@@ -1,0 +1,10 @@
+// Header del index
+.header-index {
+    @extend %flex;
+    @include position (fixed);
+    top: 0;
+    z-index: 1000;
+    @include box (0, 0, 11vh, 100%);
+    background-color: $colorbg;
+}
+

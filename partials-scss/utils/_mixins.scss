@@ -1,0 +1,9 @@
+@mixin position ($positions){
+    position: $positions;
+}
+@mixin box ($paddin, $margin, $height, $width){
+    margin:$margin;
+    padding: $padding;
+    height: $height;
+    width: $width;
+}
