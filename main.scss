@@ -90,7 +90,7 @@
         text-align: center;
         color:nth($colores, 1);
         @include mixins.texto ('Bebas Neue', 35px, none);
-        margin-top: 280px; /*Separacion de subtitulo y parrafo*/
+        margin-top: 20px; /*Separacion de subtitulo y parrafo*/
         background:transparent;
         backdrop-filter: blur(6px); /*Filtro de desenfoque para el parrafo*/
         padding-top:10px;
@@ -299,20 +299,20 @@
     .in-div{
         gap:80px;
     }
+    .main-index .parrafo-main{
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing:1px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin-top: 30px;
+    }
     .subtitulo{
         font-size: 2rem;
     }
     .in-form{
         display: flex;
         justify-content: center;
-    }
-    .main-index .parrafo-main{
-    font-size: 1.5rem;
-    text-align: left;
-    letter-spacing:1px;
-    padding-bottom: 40px;
-    width: 100%;
-    margin-top: 20px;
     }
     .form{
     width: 100%;
@@ -328,6 +328,7 @@
     height: 10%;
     width: 70%;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 0.8rem;
     }
     .btn-index{
@@ -370,33 +371,34 @@
         display:flex;
         justify-content:start;
     }
-    .header-index nav{
-        width:100%;
-        display:flex;
-        justify-content: center;
-    }
-    .header-index nav div{
-    position: fixed;
-    top:0;
-    padding-top: 10px;
-    }
     .nav-title{
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 10px;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 10px;
     }
+    .header-index .navbar{
+            width:100%;
+            display:flex;
+            justify-content: center;
+        }
+    .header-index .navbar div{
+        position: fixed;
+        top:0;
+        padding-top: 10px;
+        }
     .main-index{
-        height: 90%;
+        height: 100%;
         width:100%;
         margin-top: 11vh;
-        .parrafo-main{
-        font-size: 1.5rem;
-        text-align: left;
-        letter-spacing:1px;
-        padding-bottom: 90px;
-        width: 100%;
-        margin: 0;
-        }
+    }
+    .main-index .in-div .parrafo-main{
+    font-size: 1.3rem;
+    text-align: center;
+    letter-spacing:1px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    width: 100%;
+    margin-top: 20px;
     }
     .in-div{
         gap:100px;
@@ -422,7 +424,7 @@
     height: 10%;
     width: 70%;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     }
     .btn-index{
     height: 10%;
@@ -484,10 +486,9 @@ text-align: center;
 padding-top: 10px;
     }
     .main-index{
-        height: 70vh;
+        height: 80vh;
         .parrafo-main{
-        margin-top:10px;
-        text-align:left;
+        margin-top:20px;
         font-size: 1.4rem;
         text-align: center;
         letter-spacing:1px;
@@ -573,8 +574,9 @@ gap:5px;
     text-align: center;
     padding-top: 10px;
     }
-    .parrafo-main{
-        font-size: 1.7rem;
+    .main-index .parrafo-main{
+        font-size: 2rem;
+        margin-top: 200px;
     }
     .in-form{
         display: flex;
@@ -646,11 +648,10 @@ gap:5px;
     .ul-navbar{
         margin-right: 0;
     }
-    .parrafo-main{
+    .main-index .parrafo-main{
         font-size: 1.7rem;
-        margin-top: 10px;
+        margin-top: 190px;
         letter-spacing:1px;
-        padding-top: 150px;
     }
     .form input[type="text"]{
         text-transform: uppercase;
@@ -669,7 +670,7 @@ gap:5px;
     .ul-navbar{
         margin-right: 0;
     }
-    .parrafo-main{
+    .main-index .parrafo-main{
         font-size: 2rem;
         margin-top: 10px;
         padding-top: 190px;
@@ -695,10 +696,9 @@ gap:5px;
     .ul-navbar{
         margin-right: 0;
     }
-    .parrafo-main{
-        font-size: 2rem;
-        margin-top: 10px;
-        padding-top: 80px;
+    .main-index .parrafo-main{
+        font-size: 2.5rem;
+        padding-top: 20px;
     }
     .in-div{
         gap:200px;
@@ -927,13 +927,12 @@ text-decoration: underline;
         font-size: 0.8rem;
     }
 }
-
-@media screen and (min-width:700px) and (max-width:768px){
+@media screen and (min-width:700px) and (max-width:800px){
     .titulo-lispag{
         font-size: 1.4rem;
     }
     .sub-listas{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .navbar{
         display:flex;
@@ -941,7 +940,7 @@ text-decoration: underline;
     }
     .soporte{
         backdrop-filter:blur(10px);
-        width: 30%;
+        width: 100%;
         display: flex;
         align-items: flex-start;
     }
@@ -959,9 +958,79 @@ text-decoration: underline;
         padding: 10px;
     }
     .main-ul li a{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
+@media screen and (min-width:800px) and (max-width:900px){
+    .titulo-lispag{
+        font-size: 1.4rem;
+    }
+    .sub-listas{
+        font-size: 1.5rem;
+    }
+    .navbar{
+        display:flex;
+        justify-content: end;
+    }
+    .soporte{
+        backdrop-filter:blur(10px);
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .ul-soporte{
+        display:flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .div-ol{
+        width:15%;
+        height:50%;
+    }
+    .main-ul li{
+        width:100%;
+        padding: 10px;
+    }
+    .main-ul li a{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width:900px) and (max-width:1000px){
+    .titulo-lispag{
+        font-size: 1.4rem;
+    }
+    .sub-listas{
+        font-size: 1.5rem;
+    }
+    .navbar{
+        display:flex;
+        justify-content: end;
+    }
+    .soporte{
+        backdrop-filter:blur(10px);
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .ul-soporte{
+        display:flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .div-ol{
+        width:10%;
+        height:50%;
+    }
+    .main-ul li{
+        width:100%;
+        padding: 10px;
+    }
+    .main-ul li a{
+        font-size: 0.9rem;
+    }
+}
+
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ESTILO DE PAGINA "ARTICULOS" */
 /* Estilos del body */
@@ -969,7 +1038,7 @@ text-decoration: underline;
     background: linear-gradient(to right, rgb(11, 12, 31), rgb(4, 3, 22));
     background-size: cover;
     width: 100%;
-    height: 100vh; /* Utiliza 100vh para el viewport height */
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -1001,28 +1070,35 @@ text-decoration: underline;
 .bg-second{
     color:#ffffff;
 }
-.buton-nav{
-    border: 1px solid rgb(34, 2, 49);
-    box-shadow: 0 0 10px rgb(20, 164, 242);
-}
 .buton-nav:hover{
     background-color: #e0e0e0;
     border: 1px solid rgb(0, 4, 239);
-    box-shadow: 0 0 10px rgb(8, 0, 255);
+    box-shadow: 0 0 20px rgb(8, 0, 255);
 }
 .buton-lat{
-    backdrop-filter:blur(5px);
-    background-color: transparent;
-    color: #ffffff;
+    background-color: #660057;
+    h5{
+        color:#f5f6f7;
+    }
+    
 }
-.div-lat a{
-    color:#9700b5;
-}
-.div-lat a:visited{
-    color:#760064;
-}
-.div-lat a:hover{
-    color:rgb(251, 120, 181);
+.div-lat{
+    display: flex;
+    border: 2px solid rgb(14, 0, 19);
+    align-items: flex-start;
+    &:hover{
+        box-shadow: 0 0 10px rgb(0, 243, 239);
+    }
+    
+    .nav-link{
+        color:#ffffff;
+    }
+    a:visited{
+        color:#ffffff;
+    }
+    a:hover{
+        color:rgb(255, 0, 119);
+    }
 }
 .menu-lat a{
     color:rgb(0, 0, 0);
@@ -1043,39 +1119,6 @@ text-decoration: underline;
     padding-top: 11vh; /* Ajusta el padding-top para compensar la altura del header */
 }
 
-/* Medios de comunicación para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .sub-art {
-        font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
-        left: 0;
-        transform: none; /* Elimina el centrado horizontal cuando hay poco espacio */
-    }
-
-    .ul {
-        flex-direction: column; /* Coloca los enlaces en columna en lugar de fila */
-        gap: 10px;
-    }
-
-    .link {
-        height: auto; /* Ajusta la altura de los enlaces para que se adapten a pantallas más pequeñas */
-    }
-
-    .link-in a {
-        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
-    }
-
-    .header-art {
-        height: 11vh; /* Ajusta la altura del header en pantallas más pequeñas */
-    }
-
-    .main-art {
-        padding-top: 15vh; /* Ajusta el padding-top en función del nuevo tamaño del header */
-        height: 180vh;
-    }
-    .footer-art{
-        margin: 0;
-    }
-}
 
 /* Estilo del contenedor principal */
 .flex-container {
@@ -1173,36 +1216,124 @@ text-decoration: underline;
     box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño total */
 }
 
-
 /* Estilos del footer */
-.footer-art{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .footer-divart{
-    width:100%;
-    height:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.footer-art h3{
-    font-size: 1rem;
+    gap:20px;
+    h3{
+    font-size: 2rem;
     font-family: arial;
     color:white;
-    padding-top: 20px 5px;
+    padding-top: 20px;
 }
-.footer-art img{
-max-width: 50%;
-width: 200px;
-height: 200px;
-border: 2px solid black;
+img{
+width: 500px;
+height: 500px;
 border-radius: 5px;
+padding: 20px;
 
+}
+}
+/* Medios de comunicación para pantallas más pequeñas */
+@media (min-width: 320px) and (max-width:420px) {
+    .sub-art {
+        font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        left: 0;
+        transform: none; /* Elimina el centrado horizontal cuando hay poco espacio */
+    }
+
+    .ul {
+        flex-direction: column; /* Coloca los enlaces en columna en lugar de fila */
+        gap: 2px;
+    }
+
+    .link {
+        height: auto; /* Ajusta la altura de los enlaces para que se adapten a pantallas más pequeñas */
+    }
+
+    .link-in a {
+        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .header-art {
+        height: 11vh; /* Ajusta la altura del header en pantallas más pequeñas */
+    }
+
+    .main-art {
+        padding-top: 15vh; /* Ajusta el padding-top en función del nuevo tamaño del header */
+        height: 400vh;
+    }
+    .footer-art{
+        margin-top:30px;
+    }
+}
+@media screen and (min-width: 420px) and (max-width:768px) {
+    .sub-art {
+        font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        left: 0;
+        transform: none; /* Elimina el centrado horizontal cuando hay poco espacio */
+    }
+
+    .ul {
+        flex-direction: column; /* Coloca los enlaces en columna en lugar de fila */
+        gap: 10px;
+    }
+
+    .link {
+        height: auto; /* Ajusta la altura de los enlaces para que se adapten a pantallas más pequeñas */
+    }
+
+    .link-in a {
+        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .header-art {
+        height: 11vh; /* Ajusta la altura del header en pantallas más pequeñas */
+    }
+
+    .main-art {
+        padding-top: 15vh; /* Ajusta el padding-top en función del nuevo tamaño del header */
+        height: 180vh;
+    }
+    .footer-art{
+        margin: 0;
+    }
+}
+/* Medios de comunicación para pantallas más pequeñas */
+@media screen and (min-width: 768px) and (max-width:860px) {
+    .sub-art {
+        font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        left: 0;
+        transform: none; /* Elimina el centrado horizontal cuando hay poco espacio */
+    }
+
+    .ul {
+        flex-direction: column; /* Coloca los enlaces en columna en lugar de fila */
+        gap: 10px;
+    }
+
+    .link {
+        height: auto; /* Ajusta la altura de los enlaces para que se adapten a pantallas más pequeñas */
+    }
+
+    .link-in a {
+        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .header-art {
+        height: 11vh; /* Ajusta la altura del header en pantallas más pequeñas */
+    }
+
+    .main-art {
+        padding-top: 15vh; /* Ajusta el padding-top en función del nuevo tamaño del header */
+        height: 180vh;
+    }
+    .footer-art{
+        margin: 0;
+    }
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ESTILO DE PAGINA SOBRE NOSOTROS */
@@ -1347,6 +1478,19 @@ border-radius: 10px;
 @media screen and (max-width:730px){
     .contenedor-bio{
         gap:10px;
+    }
+    .panel-bi{
+        width: 100%;
+        .navbar-nav{
+            width: 30%;
+            border-radius: 20px;
+            border: 1px solid rgb(255, 31, 31);
+            background-color: #6a0202;
+        }
+        li a{
+            color:#fdfaff;
+            text-align: center;
+        }
     }
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
